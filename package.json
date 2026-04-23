@@ -1,0 +1,31 @@
+{
+  "name": "kando-menu-tools",
+  "module": "src/index.ts",
+  "type": "module",
+  "author": {
+    "name": "nkx36",
+    "email": "joe.malik@gmx.net"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkx36/kando-menu-tools.git"
+  },
+  "scripts": {    
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bunup": "^0.16.31",
+    "oxlint": "^1.60.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  }
+}
